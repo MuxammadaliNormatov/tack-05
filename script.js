@@ -1,14 +1,14 @@
+const lines = 5;
+let result = '';
 
-
-function fifthTask() {
-    const arrayOfNumbers = [];
-
-    for (let i = 5; i < 11; i++) {
-        arrayOfNumbers[i - 5] = i;
+for (let i = 0; i <= lines; i++) {
+    for (let j = 0; j < lines - i; j++) {
+        result += " ";
     }
-
-    console.log(arrayOfNumbers);
-    return arrayOfNumbers;
+    for (let j = 0; j < 1 + i *2; j++) {
+        result += "*";
+    }
+    result += "\n";
 }
 
-fifthTask()
+console.log(result)
